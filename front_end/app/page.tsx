@@ -64,7 +64,9 @@ const Home: NextPage = () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum)
     const signer = await provider.getSigner()
     const contract = Counter__factory.connect(COUNTER_ADDRESS, signer)
-    await contract.setNumber(number)
+    if (number !== undefined) {
+      await contract.setNumber(number)
+    }
   }
   return (
     <div className="">
