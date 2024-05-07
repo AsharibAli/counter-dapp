@@ -105,7 +105,9 @@ const Home: NextPage = () => {
           </Button>
 
           <Card className="flex flex-col items-center justify-center space-y-4 p-4">
-            <Button className="w-full">Increment Counter</Button>
+            <Button onChange={handleIncrement} className="w-full">
+              Increment Counter
+            </Button>
           </Card>
 
           <Card className="flex flex-col items-center justify-center space-y-4 p-4">
