@@ -5,6 +5,7 @@ I build it using the latest tech-stack:
 - Typescript
 - Vercel
 - TailwindCSS
+- Shadcn UI
 - Foundry (forge, cast, anvil)
 - Solidity
 - Ethers JS
